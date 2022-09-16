@@ -1,0 +1,60 @@
+<section id="gallery">
+	<br>
+	<div class="container">
+	<!--  <div ng-show="!viewCart"> -->	
+			<div class="jumbotron bg-transparent">
+				<div class="display-4 text-center p-3"><h1><strong>Some of our happy
+					customers!</strong></h1></div>
+			</div>
+		</div>
+	
+
+
+	<div class="main-image-container">
+
+
+		<div class="image-container">
+			<!-- cut between here and the next comment if if doesn't work -->
+			<div class="galleryImg"><img src="./images/gallery1.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery6.png"></div>
+			<div class="galleryImg"><img src="./images/gallery7.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery8.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery9.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery10.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery12.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery13.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery14.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery15.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery16.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery17.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery18.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery19.jpg"></div>
+			<div class="galleryImg"><img src="./images/gallery20.jpg"></div>
+			
+			
+			<!--  <div class="galleryImg" ng-repeat="item in itemsForSale">
+
+				<img src="images/{{item.image}}" alt="Card image" width="600"
+					height="400">
+
+				<div class="card-title">{{item.title}}</div>
+				
+				</div> -->
+				<div class="popup-img">
+					<span>&times;</span> <img src="./images/gallery1.jpg" alt=" ">
+			</div> 
+		</div>
+	</div>
+	<script>
+		document.querySelectorAll('.image-container img').forEach(galleryImg=> {
+			 galleryImg.onclick = () => { 
+			document.querySelector('.popup-img').style.display = 'block';
+			document.querySelector('.popup-img img').src = galleryImg.getAttribute('src');
+			 }	 
+		});
+		document.querySelector('.popup-img span').onclick = () => {
+			document.querySelector('.popup-img').style.display = 'none';
+		}
+		</script>
+
+</section>

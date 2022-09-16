@@ -1,0 +1,49 @@
+
+<br>
+<br>
+<br>
+<div class="card mt-3">
+	<div class="card-header">
+		<h4>Services</h4>
+	</div>
+	<div class="card-body" id="service-table">
+		<div class="service-img">
+			<img src="./images/logo.jpg">
+		</div>
+		<table class="table table-hover">
+			<thead class="thead-light">
+				<tr>
+					<th ng-click="orderByColumn('id')"><button
+							class="btn btn-dark">ID</button></th>
+					<th ng-click="orderByColumn('title')"><button
+							class="btn btn-dark">Title</button></th>
+					<th>BreedSize(for Pricing)</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="resource in resources | orderBy:orderByValue:reverse">
+					<td>{{resource.id}}</td>
+					<td>{{resource.title}}</td>
+					<td>{{resource.breedSize}}</td>
+					<td>{{resource.price}}$</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div id="fg-list">
+			<img src="./images/soap-icon.jpg" id="soap-icon">
+			<h3 id="fg-list-header">Full Grooming Service Includes:</h3>
+
+			<ul>
+				<li>Bath</li>
+				<li>Brush</li>
+				<li>Nail Clipping</li>
+				<li>Ear Cleaning</li>
+				<li>Blow-dry with Brush Out</li>
+				<li>Bandana, Bow or Feathers</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
