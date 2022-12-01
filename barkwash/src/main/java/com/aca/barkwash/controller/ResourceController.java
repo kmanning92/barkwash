@@ -39,7 +39,7 @@ public class ResourceController {
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Resource createResource(Resource resource) {
 		System.out.println("Resource title : " + resource.toString());
-		return service.createMovie(resource);
+		return service.createResource(resource);
 	}
 
 	@GET

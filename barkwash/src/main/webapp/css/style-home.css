@@ -77,6 +77,7 @@ nav {
 	height: 3px;
 	background-color: rgb(226, 226, 226);
 	margin: 3px;
+	transition: all 0.3 ease;
 }
 
 @media screen and (max-width : 1800px) {
@@ -103,39 +104,33 @@ nav {
 		transition: transform 0.5s ease-in;
 	}
 	.nav-links li {
-		opacity: 1;
+		opacity: 0;
 	}
 	.burger {
+		cursor: pointer;
 		display: block;
 	}
 }
 
 .nav-active {
 	transform: translateX(0%);
-	/*
+	
 }
+
 @keyframes navLinkFade{
 	from {
 	opacity: 0;
 	transform: translateX(50px);
 	}
+	
 	to{
 	opacity: 1;
 	transform: translateX(0px);
-	}
-	*/
+	
+	}	
 }
 
-@
-keyframes navLinkFade {from { opacity 0;
-	transform: translateX(50px);
-}
 
-to {opacity 1;
-	transform: translateX(0px);
-}
-
-}
 #hours {
 	font-family: Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
@@ -197,12 +192,12 @@ to {opacity 1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius:25px;
+	border-radius: 25px;
 	border: 2px solid #FFF8DC;
-	padding:20px;
-	border-style:inset;
-	margin-top:50px;
-	opacity:0.9;
+	padding: 20px;
+	border-style: inset;
+	margin-top: 50px;
+	opacity: 0.9;
 }
 
 #contact-intro {
@@ -245,7 +240,6 @@ form button {
 	border-radius: 30px;
 }
 
-
 #gallery {
 	margin: 0;
 	padding: 0;
@@ -256,8 +250,6 @@ form button {
 	color: white;
 	padding: 10px;
 	background: #5d4954;
-	
-	
 }
 
 .card-body {
@@ -437,11 +429,11 @@ form button {
 
 #main-container {
 	background: #5d4954;
-	opacity:0.9;
-	border-radius:25px;
+	opacity: 0.9;
+	border-radius: 25px;
 	border: 2px solid #FFF8DC;
-	padding:20px;
-	border-style:inset;
+	padding: 20px;
+	border-style: inset;
 }
 
 .service-img {
@@ -492,79 +484,82 @@ form button {
 	text-align: center;
 	font-size: 30px;
 	line-height: 50pt;
-	
 }
 
 #diy-container {
 	background: #5d4954;
 	margin: 30px;
-	opacity:0.8;
-	border-radius:25px;
+	opacity: 0.8;
+	border-radius: 25px;
 	border: 2px solid #FFF8DC;
-	padding:20px;
-	border-style:inset;
+	padding: 20px;
+	border-style: inset;
 }
 
 #diy-lab {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	opacity:1;
-	border-radius:50%;
-	width:400px;
-	height:300px;
-	
-}
-#rott-diy{
-	display:flex;
-	max-width:200px;
-	max-height:200px;
+	opacity: 1;
 	border-radius: 50%;
-	justify-content: space-around;
-	margin:10px;
-}
-#shepherd-diy{
-	display:flex;
-	max-width:200px;
-	max-height:200px;
-	border-radius: 50%;
-	justify-content: space-around;
-	margin:10px;
-}
-#dirty-diy{
-	display:flex;
-	max-width:200px;
-	max-height:200px;
-	border-radius: 50%;
-	margin:10px;
+	width: 400px;
+	height: 300px;
 }
 
-#sharpei-diy{
-	display:flex;
-	max-width:200px;
-	max-height:200px;
+#rott-diy {
+	display: flex;
+	max-width: 200px;
+	max-height: 200px;
 	border-radius: 50%;
-	justify-content: space-around;	
-	margin:10px;
-}
-#stock2-diy{
-	display:flex;
-	max-width:200px;
-	max-height:200px;
-	border-radius: 50%;
-	justify-content: space-around;	
-	margin:10px;
-}
-#stock3-diy{
-	display:flex;
-	max-width:200px;
-	max-height:200px;
-	border-radius: 50%;
-	justify-content: space-around;	
-	margin:10px;
+	justify-content: space-around;
+	margin: 10px;
 }
 
-#gallery-header{
+#shepherd-diy {
+	display: flex;
+	max-width: 200px;
+	max-height: 200px;
+	border-radius: 50%;
+	justify-content: space-around;
+	margin: 10px;
+}
+
+#dirty-diy {
+	display: flex;
+	max-width: 200px;
+	max-height: 200px;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+#sharpei-diy {
+	display: flex;
+	max-width: 200px;
+	max-height: 200px;
+	border-radius: 50%;
+	justify-content: space-around;
+	margin: 10px;
+}
+
+#stock2-diy {
+	display: flex;
+	max-width: 200px;
+	max-height: 200px;
+	border-radius: 50%;
+	justify-content: space-around;
+	margin: 10px;
+}
+
+#stock3-diy {
+	display: flex;
+	max-width: 200px;
+	max-height: 200px;
+	border-radius: 50%;
+	justify-content: space-around;
+	margin: 10px;
+}
+
+#gallery-header {
 	
 }
 

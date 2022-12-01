@@ -84,7 +84,7 @@ public class ResourceService {
 		}
 	}
 
-	public Resource createMovie(Resource resource) {
+	public Resource createResource(Resource resource) {
 		validatePrice(resource.getPrice());
 		validateTitle(resource.getTitle());
 		return resourceDao.createResource(resource);
